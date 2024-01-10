@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppbarButton extends StatelessWidget {
-  AppbarButton({super.key, required this.title, required this.customfunction});
+  const AppbarButton({super.key, required this.title, required this.customfunction});
 
   final String title;
   final VoidCallback customfunction;
@@ -11,7 +11,7 @@ class AppbarButton extends StatelessWidget {
     return TextButton(
       onPressed: customfunction,
       style: TextButton.styleFrom(
-          textStyle: TextStyle(
+          textStyle: const TextStyle(
         color: Colors.white,
         fontSize: 20,
         fontWeight: FontWeight.w600,
@@ -19,7 +19,7 @@ class AppbarButton extends StatelessWidget {
       child: Center(
           child: Text(
         title,
-        style: TextStyle(fontSize: 20, color: Colors.black),
+        style: const TextStyle(fontSize: 20, color: Colors.black),
       )),
     );
   }

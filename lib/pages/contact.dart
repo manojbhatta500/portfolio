@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/pages/splashscreen/widget/animated_holder.dart';
 
 class Contacts extends StatelessWidget {
-  Contacts({super.key});
+  const Contacts({super.key});
 
   static GlobalKey contactkey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       key: contactkey,
-      child: Column(
+      child: const Column(
         children: [
-          const Text(
+          Text(
             'Contact Me',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 30, color: Colors.white),
@@ -28,19 +28,19 @@ class Contacts extends StatelessWidget {
             children: [
               AnimatedHolder(
                   title: "Github",
-                  image: 'github.png',
+                  image: 'assets/github.png',
                   link: 'https://github.com/manojbhatta500'),
               AnimatedHolder(
                   title: "Linkedin",
-                  image: 'linkedin.png',
+                  image: 'assets/linkedin.png',
                   link: 'https://www.linkedin.com/in/manoj-bhatta-5071a6199/'),
               AnimatedHolder(
                   title: "Instagram",
-                  image: 'insta.jpeg',
+                  image: 'assets/insta.jpeg',
                   link: 'https://www.instagram.com/manojbhatta500/z'),
               AnimatedHolder(
                   title: "facebook",
-                  image: 'facebook.png',
+                  image: 'assets/facebook.png',
                   link: 'https://www.facebook.com/manoj.bhatta.121398/'),
             ],
           ),

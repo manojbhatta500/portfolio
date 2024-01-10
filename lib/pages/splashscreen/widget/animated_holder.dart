@@ -83,7 +83,7 @@ class _AnimatedHolderState extends State<AnimatedHolder>
                         widget.image,
                         width: 30,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
                       Text(widget.title),

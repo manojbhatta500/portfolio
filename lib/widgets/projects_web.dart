@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/constants/constans.dart';
 import 'package:portfolio/models/projectdetail.dart';
 
-import 'dart:js' as js;
 
 import 'package:portfolio/pages/splashscreen/widget/animate_project_container.dart';
 
 class Projectweb extends StatelessWidget {
-  Projectweb({super.key});
+  const Projectweb({super.key});
 
   static GlobalKey projectkey = GlobalKey();
 
@@ -16,7 +15,7 @@ class Projectweb extends StatelessWidget {
     return Container(
       key: projectkey,
       width: double.infinity,
-      margin: EdgeInsets.only(top: 10),
+      margin: const EdgeInsets.only(top: 10),
       decoration: const BoxDecoration(color: customcolors.greybgcolor),
       child: Column(
         children: [
@@ -25,7 +24,7 @@ class Projectweb extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 30, color: Colors.white),
           ),
-          SizedBox(
+          const SizedBox(
             height: 100,
           ),
           Wrap(
@@ -44,7 +43,7 @@ class Projectweb extends StatelessWidget {
                 ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 100,
           ),
         ],

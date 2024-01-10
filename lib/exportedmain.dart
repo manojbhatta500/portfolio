@@ -34,15 +34,15 @@ class expo extends StatelessWidget {
     return Scaffold(
         appBar: ismobile
             ? AppBar(
-                title: AnimatedImageContainer(
+                title: const AnimatedImageContainer(
                   width: 30,
                   height: 30,
                 ),
                 backgroundColor: customcolors.greybgcolor,
               )
-            : PreferredSize(
-                child: MobileAppbar(),
-                preferredSize: Size.fromHeight(kToolbarHeight)),
+            : const PreferredSize(
+                preferredSize: Size.fromHeight(kToolbarHeight),
+                child: MobileAppbar()),
         endDrawer: ismobile
             ? Drawer(
                 child: ListView.builder(
@@ -69,9 +69,9 @@ class expo extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Projectweb(),
-              EducationMobile(),
-              Contacts()
+              const Projectweb(),
+              const EducationMobile(),
+              const Contacts()
             ],
           ),
         ));

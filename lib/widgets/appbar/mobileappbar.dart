@@ -11,16 +11,16 @@ void _scrollToWidget(GlobalKey key) {
 }
 
 class MobileAppbar extends StatelessWidget {
-  MobileAppbar({super.key});
+  const MobileAppbar({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 200,
       child: AppBar(
         elevation: 100,
         backgroundColor: customcolors.woddencolor,
-        title: AnimatedImageContainer(
+        title: const AnimatedImageContainer(
           width: 50,
           height: 50,
         ),

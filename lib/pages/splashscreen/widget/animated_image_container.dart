@@ -71,7 +71,7 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
                 borderRadius: BorderRadius.circular(30),
               ),
               child: Image.asset(
-                'hacker.png',
+                'assets/hacker.png',
                 fit: BoxFit.cover,
               ),
             ),

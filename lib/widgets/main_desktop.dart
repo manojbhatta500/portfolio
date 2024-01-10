@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/pages/splashscreen/widget/animated_image_container.dart';
 import 'package:portfolio/services.dart';
 
 class Maindesktop extends StatelessWidget {
-  Maindesktop({
+  const Maindesktop({
     super.key,
     required this.width,
   });
@@ -73,7 +72,7 @@ class Maindesktop extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
           ],

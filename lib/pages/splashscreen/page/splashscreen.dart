@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:portfolio/constants/constans.dart';
 import 'package:portfolio/exportedmain.dart';
 import 'package:portfolio/pages/splashscreen/widget/animated_image_container.dart';
 import 'package:portfolio/pages/splashscreen/widget/animated_loading_text.dart';
@@ -49,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     width: 0.5 * width,
                     height: 0.5 * height,
                   ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             AnimatedLoadingText(),

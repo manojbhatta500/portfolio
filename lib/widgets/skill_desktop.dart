@@ -14,7 +14,7 @@ class SkillDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: width,
       key: skilldesktop,
       child: Column(

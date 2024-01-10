@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/services.dart';
 
 class MainMobile extends StatelessWidget {
-  MainMobile({
+  const MainMobile({
     super.key,
     required this.width,
   });

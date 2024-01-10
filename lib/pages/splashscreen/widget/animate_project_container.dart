@@ -129,15 +129,15 @@ class _AnimateProjectContainerState extends State<AnimateProjectContainer>
                                     .callMethod("open", [widget.githublink]);
                               },
                               child: Container(
-                                padding: EdgeInsets.all(8),
-                                child: Center(
-                                  child: Text('GitHub'),
-                                ),
+                                padding: const EdgeInsets.all(8),
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(5),
                                     border: Border.all(
                                         color: customcolors.woddencolor,
                                         width: 2)),
+                                child: const Center(
+                                  child: Text('GitHub'),
+                                ),
                               )),
                         if (widget.githublink == null)
                           InkWell(
@@ -147,15 +147,15 @@ class _AnimateProjectContainerState extends State<AnimateProjectContainer>
                                 ]);
                               },
                               child: Container(
-                                padding: EdgeInsets.all(8),
-                                child: Center(
-                                  child: Text('Upwork'),
-                                ),
+                                padding: const EdgeInsets.all(8),
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(20),
                                     border: Border.all(
                                         color: customcolors.woddencolor,
                                         width: 2)),
+                                child: const Center(
+                                  child: Text('Upwork'),
+                                ),
                               )),
                       ],
                     ),

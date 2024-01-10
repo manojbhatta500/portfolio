@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Manoj bhatta',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }
